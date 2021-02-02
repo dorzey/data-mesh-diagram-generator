@@ -1,0 +1,39 @@
+domains:
+  -
+    name: Source Domain
+    data_products:
+      -
+        name: Data Product 0
+        input_ports:
+          - 
+            name: source_data
+        output_ports:
+          - 
+            name: raw_data
+      -
+        name: Data Product 1
+        input_ports:
+          - 
+            name: raw_data
+        output_ports:
+          - 
+            name: clean_data
+  -
+    name: Consumer
+    data_products:
+      -
+        name: Data Product 3
+        input_ports:
+          -
+            name: clean_data
+        output_ports:
+          -
+            name: stream
+      -
+        name: Data Product 2
+        input_ports:
+          -
+            name: clean_data
+        output_ports:
+          -
+            name: report
