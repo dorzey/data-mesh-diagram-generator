@@ -33,4 +33,4 @@ $ poetry run data_mesh_diag <path to data mesh yml>
 
 Which will give you something like
 
-![](example_data_mesh.png)
+![](example.png)
