@@ -18,18 +18,12 @@ def add_data_product(h, data_product: DataProduct):
 
 
 def add_output_port(h, data_product: DataProduct, odp: DataPort):
-    h.node(
-        odp.name,
-        label=odp.name,
-        shape="circle",
-        style="filled",
-        color="lightgrey",
-    )
+    h.node(odp.name, shape="doublecircle")
     h.edge(data_product.name, odp.name)
 
 
 def add_input_port(h, data_product: DataProduct, idp: DataPort):
-    h.node(idp.name, label=idp.name, shape="circle", style="filled", color="lightgrey")
+    h.node(idp.name, shape="doublecircle")
     h.edge(idp.name, data_product.name)
 
 
